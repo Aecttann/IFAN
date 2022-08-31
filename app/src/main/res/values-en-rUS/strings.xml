@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">IFAN</string>
     <string name="number">Number</string>
     <string name="get_fact">Get fact</string>
     <string name="get_rand_fact">Get fact about random number</string>

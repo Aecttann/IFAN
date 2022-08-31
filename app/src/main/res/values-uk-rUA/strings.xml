@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="number">Число</string>
+    <string name="get_fact">Отримати факт</string>
+    <string name="get_rand_fact">Отримати факт про випадкове число</string>
+    <string name="error_empty_number">Введіть число</string>
+    <string name="error_api">Виникла помилка при отриманні відповіді від API</string>
+    <string name="fact_viewer">Перегляд факту</string>
+</resources>

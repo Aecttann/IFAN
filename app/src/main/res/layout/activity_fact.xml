@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/color091024"
+    tools:context=".FactActivity">
+
+    <LinearLayout
+        android:id="@+id/LLTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBack"
+            android:layout_width="50dp"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_arrowleft"
+            app:elevation="0dp" />
+
+        <TextView
+            android:id="@+id/TVToolbarText"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="@string/fact_viewer"
+            android:textAllCaps="false"
+            android:textColor="@color/colorsWhite80Per" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/TVNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorsWhite"
+            android:textStyle="bold"
+            tools:text="1"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TVFact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorsWhite"
+                android:layout_marginTop="10dp"
+                android:singleLine="false"
+                android:breakStrategy="high_quality"
+                android:justificationMode="inter_word"
+                android:layout_marginStart="@dimen/startEnd_margin"
+                android:layout_marginEnd="@dimen/startEnd_margin"
+                tools:text="is the number of moons orbiting Earth."
+                tools:targetApi="o" />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
